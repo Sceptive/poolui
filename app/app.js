@@ -17,10 +17,13 @@ var app = angular.module('poolui', [
 	]).config(['$locationProvider', '$routeProvider', '$mdThemingProvider', function($locationProvider, $routeProvider, $mdThemingProvider) {
 		$locationProvider.hashPrefix('')
 		;	
-		$mdThemingProvider.theme('default')
-		.primaryPalette('grey')
-		.accentPalette('light-blue');
-
+		$mdThemingProvider.disableTheming();/*theme('default')
+		.primaryPalette('blue-grey',{
+      'default': '700', // by default use shade 400 from the pink palette for primary intentions
+    
+    })
+		.accentPalette('blue-grey');
+*/
 		$routeProvider
 		.when('/home', {
 			templateUrl: 'user/home/home.html',

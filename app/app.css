@@ -1,21 +1,24 @@
 /*** Global Styles ***/
 
 html, body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Iosevka', monospace;
   font-size:14px;
   margin: 0px;
   padding: 0px;
   min-width: 420px;
+  color: #000;
+  background-color: rgb(180,193,203);
+
 }
 
 a {
   transition: color .4s;
-  color: #3287b3;
+  color: #F9aa33;
 }
 
 a:link { text-decoration: none; },
-a:visited { color: #3b98c8; }
-a:hover   { color: #3b98c8; }
+a:visited { color: #F9aa33; }
+a:hover   { color: #F9aa33; }
 a:active  {
   transition: color .3s;
   color: #007BE6;
@@ -23,11 +26,12 @@ a:active  {
 
 /*** Material Styles ***/
 #main {
-  background: #f3f5f7;
 }
 
-.maintoolbar {
-  background-color: #fff;
+
+input, table, table.md-table, table.md-table th.md-column, md-body, h3, h2, h1, md-body-2,p,label
+ ,.md-table-pagination {
+  color: rgb(23,38,42);
 }
 
 
@@ -39,12 +43,106 @@ a:active  {
   padding: 12px ;
 }
 
+.md-button {
+ font-size: 16px;
+}
+
 .md-menu-toolbar {
   background: #00796B;
 }
 
+md-select-menu,md-toolbar {
+  background-color: #232f34;
+  color: #fff;
+
+}
+
+md-dialog {
+  background-color: rgb(237,240,242);
+  color: #d1d6da;
+}
+
+md-dialog h2 {
+  color: #d1d6da;
+}
+
+md-dialog-content, md-dialog md-checkbox {
+  color: rgb(36,47,52);
+}
+
+.md-toolbar-tools a {
+ color: #d1d6da;
+}
+.md-toolbar-tools a:link { text-decoration: none; },
+.md-toolbar-tools a:visited { color: #F9aa33; }
+.md-toolbar-tools a:hover   { color: #F9aa33; }
+.md-toolbar-tools a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+md-toolbar.md-table-toolbar:not(.md-menu-toolbar).md-default {
+  background-color: rgb(210,219,224);
+  color: rgb(44,61,69);
+}
+
+md-toolbar {
+  min-height: 16px;
+}
+
+.md-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
 md-tooltip .md-content {
   height: auto !important;
+}
+
+md-input-container  input {
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(23,38,42);
+  border-bottom-style: solid;
+}
+
+md-card {
+  background-color: #fff;
+  color: rgb(23,38,42);
+}
+
+md-card-content {
+  color: rgb(23,38,42);
+}
+
+md-card a {
+  transition: color .4s;
+  color: rgb(74,91,172);
+}
+
+md-card a:link { text-decoration: none; },
+md-card a:visited { color: rgb(74,91,172); }
+md-card a:hover   { color: rgb(74,91,172); }
+md-card a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+
+.md-orange-button {
+  background-color: #F9aa33;
+  color: rgb(23,38,42);
+}
+h3, h2, h1 {
+  font-size: 14px;
+}
+
+.md-headline {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar {
 }
 
 .navbar .smallfont h3{
@@ -56,7 +154,8 @@ md-tooltip .md-content {
 }
 
 .sidenav {
-  background-color: #2b333e;
+  background-color: #344955;
+  color: #d1d6da;
 }
 
 .sidenav ul{
@@ -70,7 +169,6 @@ md-tooltip .md-content {
 .sidenav a {
   width: 100%;
   text-align: left;
-  color: #fff;
   margin: 0px;
 }
 

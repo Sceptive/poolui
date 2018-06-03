@@ -5,7 +5,8 @@
         <h2>Miner Login</h2>
         <span flex></span>
         <md-button class="md-icon-button" ng-click="cancel()">
-          <md-icon aria-label="Close dialog">clear</md-icon>
+        <i class="fa fa-times"></i>
+
         </md-button>
       </div>
     </md-toolbar>
@@ -16,13 +17,12 @@
           <md-input-container class="md-icon-float md-block">
             <!-- Use floating label instead of placeholder -->
             <label>Payment Address</label>
-            <md-icon>person</md-icon>
             <input ng-model="user.username" name="username" type="text" md-autofocus>
           </md-input-container>
 
           <md-input-container class="md-icon-float md-block">
             <label>Password</label>
-            <md-icon>lock</md-icon>
+                    <i class="fa fa-lock"></i>
             <input ng-model="user.password" name="password" type="password" placeholder="your email identifier (read Getting Started to set one)">
           </md-input-container>
         </div>
@@ -35,7 +35,7 @@
       </md-checkbox>
       <span flex></span>
       <p class="invalid">{{status}}</p>
-      <md-button class="md-raised md-primary" ng-click="login()">
+      <md-button class="md-raised md-primary md-orange-button" ng-click="login()">
         Login
       </md-button>
     </md-dialog-actions>
